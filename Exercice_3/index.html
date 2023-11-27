@@ -12,9 +12,19 @@
     </p>
   </div>
   <div>
-  <div class="color green" ></div>
-  <div class="color red" ></div>
-  <div class="color blue" ></div>
+  <div class= "color green" onclick="changeColor('green');" ></div>
+  <div class= "color red" onclick="changeColor('red');" ></div>
+  <div class= "color blue" onclick="changeColor('blue');" ></div>
 </div>
+
+<script>
+
+
+function changeColor(newColor) {
+  let elem = document.getElementById("text");
+  elem.style.color = newColor;
+}
+  
+</script>
 </body>
 </html>
