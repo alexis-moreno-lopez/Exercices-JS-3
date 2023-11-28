@@ -1,21 +1,44 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8" />
-  <title>Exercice 4</title>
-</head>
-<body>
-  <form>
-    <label for="password">Votre mot de passe : </label><input type="text" name="password" id="password" />
-    <label for="confirmPassword">Confirmez : </label><input type="text" name="confirmPassword" id="confirmPassword" />
-    <button type="button" name="button" >Vérification</button>
-  </form>
-  <script>
-    let mp = document.getElementById ("mp");
-    if (mp < 2){
-      function
+  <head>
+    <meta charset="utf-8" />
+    <title>Exercice 4</title>
+  </head>
+  <body>
+    <form>
+      <label for="password">Votre mot de passe : </label
+      ><input type="text" name="password" id="password" />
+      <label for="confirmPassword">Confirmez : </label
+      ><input type="text" name="confirmPassword" id="confirmPassword" />
+      <button type="button" name="button">Vérification</button>
+    </form>
+    <script>
 
-    }
-  </script>
-</body>
+      const mp1 = document.querySelector('#password')
+      const mp2 = document.querySelector('#confirmPassword')
+      const button = document.querySelector('button')
+
+
+      button.addEventListener('click', function() {
+        if (mp1.value != mp2.value) {
+          mp1.style.border = "1px solid red";
+        }else
+           {
+            mp1.style.border = "1px solid green";
+          
+        }
+      });
+
+
+
+
+      //if (mp1 != mp2){
+      //  function changeBordure(){
+         // mp.(.style.bordure.red)
+      //  }
+
+
+      //}
+    </script>
+  </body>
 </html>
